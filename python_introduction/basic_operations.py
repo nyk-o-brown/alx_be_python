@@ -20,8 +20,11 @@ Operation = input("Enter the operation :")
 if Operation == "Addition":
     print(f"Addition of {number1} and {number2} is {Addition}")
 
-if Operation == "Subtraction":
+elif Operation == "Subtraction":
     print(f"Subtraction of {number1} and {number2} is {Subtraction}")
-    
-if Operation == "Multiplication":
-    print(f"Multiplication of {number1} and {number2} is {Multiplication}")        
+
+elif Operation == "Multiplication":
+    print(f"Multiplication of {number1} and {number2} is {Multiplication}")
+
+else:
+    print("Invalid operation. Please choose Addition, Subtraction, or Multiplication.")
