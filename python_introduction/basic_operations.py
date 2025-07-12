@@ -18,7 +18,7 @@ Operation = input("Enter the operation :")
 
 #display the data accordint to the users option
 if Operation == "Addition":
-    print(f"Sum of {number1} and {number2} is {Addition}")
+    print(f"Addition of {number1} and {number2} is {Addition}")
 
 if Operation == "Subtraction":
     print(f"Subtraction of {number1} and {number2} is {Subtraction}")
