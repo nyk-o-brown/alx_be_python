@@ -1,6 +1,6 @@
 
 
-age = input ("how old  ?? in int:")
+age = input ("how old are you :")
 
 age = int(age)
 
