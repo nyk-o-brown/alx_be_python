@@ -1,5 +1,5 @@
 
-monthly_income = input("Enter your monthly income :")
+monthly_income = input("Enter your monthly income:")
 
 monthly_income =int(monthly_income)
 
