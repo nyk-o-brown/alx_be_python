@@ -4,10 +4,10 @@ answer =input("What's the weather like today? (sunny/rainy/cold):")
 if answer == "sunny" :
     print(" Wear a t-shirt and sunglasses.")
 
-elif answer == "rainy" :
+if answer == "rainy" :
     print(" Don't forget your umbrella and a raincoat.")
 
-elif answer == "cold" :
+if answer == "cold" :
     print("Make sure to wear a warm coat and a scarf.")  
   
 else :
