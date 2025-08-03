@@ -1,6 +1,7 @@
 import unittest
 
 
+
 class SimpleCalculator():
     
     def add(self , a, b):
@@ -28,22 +29,22 @@ from simple_calculator import SimpleCalculator
 class testCase (unittest.TestCase):
     
     def setUp(self):
-        self.calculator = SimpleCalculator()
+        self.calc = SimpleCalculator()
         
     def test_addition(self):
-        result = self.calculator.add(2, 3)
+        result = self.calc.add(2, 3)
         self.assertEqual(result, 5)
     
     def test_subtraction(self):
-        result = self.calculator.subtract(5, 2)
+        result = self.calc.subtract(5, 2)
         self.assertEqual(result, 3)
             
     def  test_multiply(self):
-        result = self.calculator.multiply(5, 2)
+        result = self.calc.multiply(5, 2)
         self.assertEqual(result, 10)
     
     def test_divide(self):
-        result = self.calculator.divide(10, 5)
+        result = self.calc.divide(10, 5)
         self.assertEqual(result,2)
         
         with self.assertRaises(ValueError):
