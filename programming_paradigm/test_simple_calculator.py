@@ -1,6 +1,6 @@
 import unittest
 
-class SimpleCalculator:
+class SimpleCalculator():
     
     def add(self , a, b):
         result = a+b
