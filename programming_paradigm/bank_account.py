@@ -8,7 +8,7 @@ class BankAccount:
         self.__account_balance += amount
             
     def withdraw(self ,amount) :
-        if amount < self.__account_balance :
+        if amount <= self.__account_balance :
             self.__account_balance -= amount
         else:    
             return False 
