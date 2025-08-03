@@ -1,7 +1,7 @@
 import unittest
 
 
-class SimpleCalculator():
+class Simple_Calculator():
     
     def add(self , a, b):
         result = a+b
@@ -23,7 +23,7 @@ class SimpleCalculator():
 
 
 
-from SimpleCalculator import SimpleCalculator
+from test_simple_calculator import Simple_Calculator
 class testCase (unittest.TestCase):
     def test_addition(self):
         result = 2 + 3
