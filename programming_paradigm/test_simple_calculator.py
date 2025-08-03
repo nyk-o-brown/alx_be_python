@@ -24,7 +24,7 @@ class SimpleCalculator():
 
 
 
-from test_simple_calculator import SimpleCalculator
+from simple_calculator import SimpleCalculator
 class testCase (unittest.TestCase):
     def test_addition(self):
         result = 2 + 3
