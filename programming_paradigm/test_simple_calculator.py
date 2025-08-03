@@ -26,20 +26,24 @@ class SimpleCalculator():
 
 from simple_calculator import SimpleCalculator
 class testCase (unittest.TestCase):
+    
+    def setUp(self):
+        self.calculator = SimpleCalculator()
+        
     def test_addition(self):
-        result = 2 + 3
+        result = self.calculator.add(2, 3)
         self.assertEqual(result, 5)
     
     def test_subtraction(self):
-        result = 5-2
+        result = self.calculator.subtract(5, 2)
         self.assertEqual(result, 3)
             
     def  test_multiply(self):
-        result =  5*10
+        result = self.calculator.multiply(5, 2)
         self.assertEqual(result, 10)
     
     def test_divide(self):
-        result = 10 /5
+        result = self.calculator.divide(10, 5)
         self.assertEqual(result,2)
         
         with self.assertRaises(ValueError):
