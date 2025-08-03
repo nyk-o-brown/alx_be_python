@@ -1,4 +1,5 @@
 import unittest
+import calc
 
 
 
@@ -32,7 +33,7 @@ class testCase (unittest.TestCase):
         self.calc = SimpleCalculator()
         
     def test_addition(self):
-        result = self.calc.add(2, 3)
+        result = calc.add(2, 3)
         self.assertEqual(result, 5)
     
     def test_subtraction(self):
