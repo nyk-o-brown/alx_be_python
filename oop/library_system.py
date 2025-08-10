@@ -27,10 +27,16 @@ class Library:
         for book in self.books:
             # Decide how to display based on the book’s class
             if isinstance(book, EBook):
-                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
+                def __str__(self):
+                    print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
+            
             elif isinstance(book, PrintBook):
-                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
+                def __str__(self):
+                    print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
+                
             else:
-                print(f"Book: {book.title} by {book.author}")
+                def __str__(self):
+                    print(f"Book: {book.title} by {book.author}")
+                
 
                       
